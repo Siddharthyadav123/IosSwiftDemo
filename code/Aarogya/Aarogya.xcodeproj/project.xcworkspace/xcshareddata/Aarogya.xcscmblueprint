@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "94cbf8c8-6e0a-47bf-8442-a0d804aab525++6478",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "94cbf8c8-6e0a-47bf-8442-a0d804aab525++6478" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "94cbf8c8-6e0a-47bf-8442-a0d804aab525++6478" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D12D1735-BBFF-4385-924E-294D5B868D17",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "94cbf8c8-6e0a-47bf-8442-a0d804aab525++6478" : "DoctorsGuide\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Aarogya",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Development\/iOS\/trunk\/code\/Aarogya\/Aarogya.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/172.16.1.27:12000\/SVN\/MVP",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "94cbf8c8-6e0a-47bf-8442-a0d804aab525++6478"
+    }
+  ]
+}

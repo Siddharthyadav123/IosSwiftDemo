@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeScreenViewController" customModule="Aarogya" customModuleProvider="target">
+            <connections>
+                <outlet property="cancelImage" destination="Qff-lo-cZf" id="T0T-wT-BK0"/>
+                <outlet property="headerView" destination="SSf-fS-eqt" id="Rkl-6n-cvB"/>
+                <outlet property="knowLabelOutlet" destination="R0m-yg-hWy" id="3gb-t8-tIO"/>
+                <outlet property="mainContainerView" destination="Qre-4i-DTD" id="CQ1-7X-Qvp"/>
+                <outlet property="parentView" destination="9cr-PW-TkP" id="OPX-rS-rKb"/>
+                <outlet property="tabBarView" destination="JUb-Ri-eQM" id="8Og-Gx-2yR"/>
+                <outlet property="tabItemOutlet" destination="vdv-5R-5ir" id="bFS-gh-Vhb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" id="9cr-PW-TkP">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" id="SSf-fS-eqt">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="53"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mark.png" id="Sdv-ir-qON">
+                                    <rect key="frame" x="293" y="23" width="19" height="23"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Know" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="R0m-yg-hWy">
+                                    <rect key="frame" x="46" y="24" width="228" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="close.png" id="Qff-lo-cZf">
+                                    <rect key="frame" x="15" y="30" width="8" height="8"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Rjk-Jt-5lm">
+                                    <rect key="frame" x="8" y="22" width="15" height="16"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <connections>
+                                        <action selector="cancelButton:" destination="-1" eventType="touchUpInside" id="dzU-uy-QFx"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.24705882352941178" green="0.70980392156862748" blue="0.99215686274509807" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" id="Qre-4i-DTD">
+                            <rect key="frame" x="0.0" y="64" width="320" height="460"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <color key="backgroundColor" red="1" green="0.81006618429999999" blue="0.90055561039999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" id="kqn-an-BLr">
+                            <rect key="frame" x="0.0" y="519" width="320" height="1"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <tabBar contentMode="scaleToFill" id="JUb-Ri-eQM">
+                            <rect key="frame" x="0.0" y="519" width="320" height="49"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <items>
+                                <tabBarItem title="Know" image="know24.png" id="vdv-5R-5ir">
+                                    <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                                </tabBarItem>
+                                <tabBarItem title="FInd" image="find24.png" id="vUB-8U-5kM"/>
+                                <tabBarItem title="Consult" image="consult24.png" id="2S1-eK-aP4"/>
+                                <tabBarItem title="Record" image="record24.png" id="0mN-ZG-pak"/>
+                                <tabBarItem title="Profile" image="profile24.png" id="hPc-uS-W9D"/>
+                            </items>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="nrv-i3-j1e"/>
+                            </connections>
+                        </tabBar>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <point key="canvasLocation" x="290" y="268"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="close.png" width="16" height="16"/>
+        <image name="consult24.png" width="24" height="24"/>
+        <image name="find24.png" width="24" height="24"/>
+        <image name="know24.png" width="24" height="24"/>
+        <image name="mark.png" width="16" height="16"/>
+        <image name="profile24.png" width="24" height="24"/>
+        <image name="record24.png" width="24" height="24"/>
+    </resources>
+</document>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConsultViewController" customModule="Aarogya" customModuleProvider="target">
+            <connections>
+                <outlet property="askFreeQueButton" destination="21V-kI-Euu" id="LQV-pQ-REy"/>
+                <outlet property="parentView" destination="7Dn-9Z-hN0" id="OQn-ue-uVj"/>
+                <outlet property="searchBar" destination="ZlC-Gc-bQG" id="oA3-kZ-tFi"/>
+                <outlet property="searchContainerView" destination="E4f-hB-XNA" id="7dF-Y1-Egr"/>
+                <outlet property="searchDisplayController" destination="J1D-Vi-ePg" id="sPb-aL-ZDz"/>
+                <outlet property="tableView" destination="eKW-IL-2mr" id="0bI-GS-Agf"/>
+                <outlet property="tableViewContainerView" destination="Lts-dR-ynI" id="Kwu-UH-BoB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" id="7Dn-9Z-hN0">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="576"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" id="E4f-hB-XNA">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <searchBar contentMode="redraw" placeholder="Search by problem or symptom" id="ZlC-Gc-bQG">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <color key="barTintColor" red="0.95173956131552218" green="0.98534549103890923" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="JKQ-93-aq1"/>
+                                    </connections>
+                                </searchBar>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" id="Lts-dR-ynI">
+                            <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" style="plain" separatorStyle="default" allowsSelectionDuringEditing="YES" rowHeight="118" sectionHeaderHeight="1" sectionFooterHeight="1" id="eKW-IL-2mr">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <inset key="separatorInset" minX="63" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <connections>
+                                        <outlet property="dataSource" destination="-1" id="cR1-OM-VBg"/>
+                                        <outlet property="delegate" destination="-1" id="o9Q-Ab-1F8"/>
+                                    </connections>
+                                </tableView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="21V-kI-Euu">
+                                    <rect key="frame" x="0.0" y="480" width="320" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                    <color key="backgroundColor" red="0.10242586770000001" green="0.30665148660000002" blue="0.71173878209999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                    <state key="normal" title="ASK FREE QUESTION">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="askFreeQuestion:" destination="-1" eventType="touchUpInside" id="Qud-GX-KSb"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <point key="canvasLocation" x="270" y="247"/>
+        </view>
+        <searchDisplayController id="ahc-fJ-AnP">
+            <connections>
+                <outlet property="delegate" destination="-1" id="kwt-74-qEG"/>
+                <outlet property="searchContentsController" destination="-1" id="Zfo-pC-9WN"/>
+                <outlet property="searchResultsDataSource" destination="-1" id="N2e-ag-AqK"/>
+                <outlet property="searchResultsDelegate" destination="-1" id="riQ-0z-JGt"/>
+            </connections>
+        </searchDisplayController>
+        <searchDisplayController id="SCd-AK-FC3">
+            <connections>
+                <outlet property="delegate" destination="-1" id="G5R-OK-8IK"/>
+                <outlet property="searchContentsController" destination="-1" id="W6h-WG-uCC"/>
+                <outlet property="searchResultsDataSource" destination="-1" id="AAF-Ed-aeI"/>
+                <outlet property="searchResultsDelegate" destination="-1" id="FQ9-qY-rLT"/>
+            </connections>
+        </searchDisplayController>
+        <searchDisplayController id="J1D-Vi-ePg">
+            <connections>
+                <outlet property="delegate" destination="-1" id="lu2-Jl-ZrJ"/>
+                <outlet property="searchContentsController" destination="-1" id="Ihd-d1-bAo"/>
+                <outlet property="searchResultsDataSource" destination="-1" id="xTo-Rt-y8g"/>
+                <outlet property="searchResultsDelegate" destination="-1" id="otD-Rl-1uV"/>
+            </connections>
+        </searchDisplayController>
+    </objects>
+</document>
